@@ -30,7 +30,7 @@ export function Header({ data, lang, navItems }: HeaderProps) {
           </span>
         </Link>
 
-        <div className="flex items-center gap-8 md:gap-12">
+        <div className="flex items-center gap-4 md:gap-12">
           <nav className="flex flex-wrap justify-center gap-x-8 gap-y-4 text-[10px] font-black uppercase tracking-[0.1em] text-brand-muted">
             {navigation.map((item: any, i: number) => (
               <Link
@@ -45,8 +45,8 @@ export function Header({ data, lang, navItems }: HeaderProps) {
 
           {/* Language switcher — only shown when inside a lang route */}
           {lang && (
-            <div className="hidden md:flex items-center">
-              <div className="w-px h-4 bg-border-subtle mr-8" />
+            <div className="flex items-center">
+              <div className="hidden md:block w-px h-4 bg-border-subtle mr-8" />
               <LangSwitcher />
             </div>
           )}
