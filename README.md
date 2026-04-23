@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Victor Freire - Personal Portfolio
 
-## Getting Started
+This is a production-ready personal portfolio built with a modern stack focusing on high-fidelity structured layout, premium typography, and technical robustness.
 
-First, run the development server:
+## Tech Stack
+- **Framework**: Next.js 15+ (App Router)
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **CMS**: Sanity (v3) 
+- **Language**: TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Local Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Configure Environment Variables:**
+   Create a `.local.env` or `.env.local` file at the root of the project with your Sanity credentials.
+   ```env
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+   NEXT_PUBLIC_SANITY_DATASET=production
+   NEXT_PUBLIC_SANITY_API_VERSION=2024-03-26
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open `http://localhost:3000` to view the website.
 
-## Learn More
+## Sanity Setup (Content Management)
 
-To learn more about Next.js, take a look at the following resources:
+If you haven't created a Sanity project yet:
+1. Initialize your project on [sanity.io](https://www.sanity.io/).
+2. Grab your Project ID.
+3. Once running locally, navigate to `http://localhost:3000/studio` to access the embedded CMS.
+4. You will be prompted to log in. Once logged in, you can start adding Site Settings, Projects, Philosophies, Timeline Entries, and Contact Info models.
+5. The frontend is designed to safely fallback to placeholder content if the CMS is empty. For full fidelity, ensure that the `Site Settings` document is published.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Edit Content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Log into your production CMS or locally at `/studio`.
+2. Navigate to **Content**.
+3. All blocks of text, colors for the project covers (use hex values), images, tracking markers, and navigation are controllable from here.
+4. Updates should automatically flow to the frontend (ensure Next.js revalidation strategy fits your workflow – currently set to 60 seconds interval).
 
-## Deploy on Vercel
+## Deployment (Vercel Ready)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to a GitHub repository.
+2. Sign in to [Vercel](https://vercel.com/) and Import the project.
+3. During the setup phase in Vercel, populate the Environment Variables you created in `.env.local`.
+4. Deploy. Vercel will automatically detect Next.js and build it correctly. Ensure the Sanity project URLs are updated with your final production domain in the Sanity management dashboard under API settings (CORS Origins).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Created by Antigravity*
