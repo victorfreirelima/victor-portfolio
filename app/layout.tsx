@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
     settings = await client.fetch(groq`*[_type == "siteSettings"][0]`)
   } catch (error) {
     if (process.env.NODE_ENV === 'development') {
-      console.warn('Metadata fetch: Sanity ID placeholder vvvx1xyz detected or connection failed. Using fallback data.')
+      console.warn('Metadata fetch: Sanity connection failed or ID missing. Using fallback data.')
     }
   }
   

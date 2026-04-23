@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv'
 dotenv.config({ path: '.env.local' })
 
 const client = createClient({
-  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'vvvx1xyz',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'hnwjteam',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
   apiVersion: '2024-03-26',
   useCdn: false,
