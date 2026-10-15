@@ -94,6 +94,8 @@ export default defineType({
         defineField({ name: 'heroImage', title: 'Hero Image', type: 'image', options: { hotspot: true } }),
         defineField({ name: 'staticHeroImageFallback', title: 'Static Hero Image Fallback (URL)', type: 'string' }),
         defineField({ name: 'overview', title: 'Overview', type: 'text' }),
+        defineField({ name: 'contribution', title: 'My Role and Contribution', type: 'text' }),
+        defineField({ name: 'delivery', title: 'Delivery and Contribution', type: 'text', description: 'Describe confirmed deliveries. Only claim measured results when a source and measurement period are available.' }),
         defineField({ name: 'problem', title: 'Problem & Context', type: 'text' }),
         defineField({ name: 'approach', title: 'Approach / Thinking', type: 'text' }),
         defineField({ name: 'solution', title: 'Solution', type: 'text' }),

@@ -13,6 +13,7 @@ import { UXDecisionsSection } from '@/components/sections/case-study/UXDecisions
 import { ImpactSection } from '@/components/sections/case-study/ImpactSection'
 import { FadeIn } from '@/components/ui/FadeIn'
 import { type Lang } from '@/lib/i18n/translations'
+import { isContentReview, reviewHome, reviewProject } from '@/lib/portfolio-review.mjs'
 
 export const revalidate = 60
 
@@ -36,6 +37,11 @@ export async function generateStaticParams() {
 // ─── Shared Fetch Logic ───────────────────────────────────────────────────────
 
 async function getProjectBySlug(slug: string, lang: string) {
+  if (isContentReview()) {
+    const original = await client.fetch(projectBySlugQuery, { slug, lang }).catch(() => null)
+    const home = reviewHome({ projects: original ? [original] : [] }, lang)
+    return home.projects.find((project: { slug?: { current: string } }) => project.slug?.current === slug) ?? null
+  }
   try {
     // Query 1: Exact match on slug and lang
     let project = await client.fetch(projectBySlugQuery, { slug, lang })
@@ -74,6 +80,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${title} — ${eyebrowLabel} | Victor Freire`,
     description: sanityProject?.caseStudy?.subtitle || '',
+    alternates: {
+      canonical: `/${lang}/projects/${slug}`,
+      languages: { 'pt-BR': `/pt-br/projects/${slug}`, en: `/en/projects/${slug}` },
+    },
   }
 }
 
@@ -81,7 +91,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
 export default async function LangCaseStudyPage({ params }: PageProps) {
   const { lang: rawLang, slug } = await params
-  const lang = (SUPPORTED_LANGS.includes(rawLang as Lang) ? rawLang : 'en') as Lang
+  if (!SUPPORTED_LANGS.includes(rawLang as Lang)) notFound()
+  const lang = rawLang as Lang
 
   let sanityProject: any = null
   let settings: any = null
@@ -95,6 +106,10 @@ export default async function LangCaseStudyPage({ params }: PageProps) {
 
   if (!sanityProject) {
     notFound()
+  }
+  if (isContentReview()) {
+    sanityProject = reviewProject(sanityProject, lang)
+    settings = reviewHome({ settings }, lang).settings
   }
 
   const cs = sanityProject?.caseStudy ?? {}
@@ -164,6 +179,10 @@ export default async function LangCaseStudyPage({ params }: PageProps) {
           <CaseStudySection eyebrow={sl.overview} body={overview} first />
         </FadeIn>
 
+        {cs.contribution && (
+          <CaseStudySection eyebrow={lang === 'pt-br' ? 'Meu papel' : 'My role'} body={cs.contribution} />
+        )}
+
         <FadeIn className="w-full" delay={0.1}>
           <CaseStudySection eyebrow={sl.problem} body={problem} />
         </FadeIn>
@@ -196,6 +215,10 @@ export default async function LangCaseStudyPage({ params }: PageProps) {
           <FadeIn className="w-full" delay={0.1}>
             <ImpactSection items={impact} sectionLabel={sl.impact} />
           </FadeIn>
+        )}
+
+        {cs.delivery && (
+          <CaseStudySection eyebrow={lang === 'pt-br' ? 'Entrega e contribuição' : 'Delivery and contribution'} body={cs.delivery} />
         )}
 
         <FadeIn className="w-full" delay={0.1}>

@@ -11,6 +11,7 @@ import { FadeIn } from '@/components/ui/FadeIn'
 import { client } from '@/sanity/lib/client'
 import { homePageQuery } from '@/sanity/lib/queries'
 import { type Lang } from '@/lib/i18n/translations'
+import { isContentReview, reviewHome } from '@/lib/portfolio-review.mjs'
 
 export const revalidate = 60
 
@@ -37,6 +38,7 @@ export default async function LangHome({
     data = { settings: {}, projects: [], philosophy: {}, timeline: [], contact: {} }
   }
 
+  if (isContentReview()) data = reviewHome(data, lang)
   const settings = data?.settings || {}
   const navItems = settings.navigationItems?.length ? settings.navigationItems : []
 
@@ -68,7 +70,7 @@ export default async function LangHome({
       <Header data={settings} lang={lang} navItems={navItems} />
       <main className="flex-1 w-full flex flex-col items-center">
         <FadeIn delay={0.1}>
-          <HeroSection data={heroData} />
+          <HeroSection data={heroData} lang={lang} />
         </FadeIn>
 
         <FadeIn delay={0.2}>
@@ -80,6 +82,8 @@ export default async function LangHome({
             data={projectsData}
             lang={lang}
             sectionLabel={settings.projectsEyebrow || ''}
+            featuredLabel={settings.projectsFeaturedLabel}
+            otherLabel={settings.projectsOtherLabel}
           />
         </FadeIn>
 

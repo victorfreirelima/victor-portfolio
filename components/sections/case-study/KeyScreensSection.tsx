@@ -37,7 +37,7 @@ export function KeyScreensSection({ screens, sectionLabel = 'Key Screens', scree
   }
 
   return (
-    <section className="w-full py-40 bg-background border-t border-border-subtle/50">
+    <section className="w-full py-16 md:py-24 bg-background border-t border-border-subtle/50">
       <Container>
         {/* Section header — same style as ProjectsGrid */}
         <div className="flex justify-between items-center mb-16 uppercase tracking-[0.2em] text-[10px] font-bold text-brand-muted">
@@ -61,7 +61,7 @@ export function KeyScreensSection({ screens, sectionLabel = 'Key Screens', scree
                 <img
                   src={screen.src}
                   alt={screen.caption}
-                  className="w-full h-full object-cover object-top transform transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-contain object-center"
                 />
               </button>
 

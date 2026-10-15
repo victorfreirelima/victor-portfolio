@@ -10,7 +10,7 @@ export function LogoStrip({ data }: { data: any }) {
   return (
     <section className="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] py-16 lg:py-28 bg-brand-dark overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-8 md:gap-16 text-[10px] uppercase tracking-[0.25em] font-bold text-white/95">
-        <div className="shrink-0 text-white/40 md:text-white/95">
+        <div className="text-white/85 max-w-[260px] leading-relaxed">
           {title}
         </div>
         <div className="flex items-center gap-10 md:gap-24 opacity-80 grayscale overflow-x-auto no-scrollbar pb-2 w-full md:w-auto">
@@ -30,6 +30,7 @@ export function LogoStrip({ data }: { data: any }) {
           ))}
         </div>
       </div>
+      {data?.logoStripDescription && <p className="max-w-[1280px] mx-auto px-6 md:px-12 mt-6 text-sm text-white/75 leading-relaxed">{data.logoStripDescription}</p>}
     </section>
   )
 }

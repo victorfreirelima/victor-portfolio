@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Container } from '../../layout/Container'
 
 interface CaseStudyHeroProps {
@@ -25,7 +24,7 @@ export function CaseStudyHero({
   metaLabels = { role: 'Role', context: 'Context', year: 'Year' },
 }: CaseStudyHeroProps) {
   return (
-    <section className="pt-8 md:pt-12 pb-24 md:pb-40 w-full overflow-hidden">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-24 w-full overflow-hidden">
       <Container className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-16 items-center">
 
         {/* Left — Text Content */}
@@ -42,7 +41,7 @@ export function CaseStudyHero({
             {title}
           </h1>
 
-          <p className="text-[10px] tracking-[0.15em] text-brand-gray uppercase font-bold max-w-[280px] mt-2">
+          <p className="text-base leading-relaxed text-brand-gray max-w-[460px]">
             {subtitle}
           </p>
 

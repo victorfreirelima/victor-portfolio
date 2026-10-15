@@ -29,11 +29,11 @@ export async function generateMetadata(): Promise<Metadata> {
   }
   
   const title = settings?.metaTitle || settings?.siteTitle || 'Victor Freire | Personal Portfolio'
-  const description = settings?.metaDescription || settings?.siteTitle || 'Architecting robust digital infrastructures and product systems.'
-  const ogImage = settings?.ogImage ? urlForImage(settings.ogImage).width(1200).height(630).url() : '/og-image.jpg'
+  const description = settings?.metaDescription || 'Victor Freire — UX/UI Designer. Enterprise systems, SaaS, web and mobile interfaces.'
+  const ogImage = settings?.ogImage ? urlForImage(settings.ogImage).width(1200).height(630).url() : '/perfil.png'
 
   return {
-    metadataBase: new URL('http://localhost:3000'),
+    metadataBase: new URL('https://victorfreire.com'),
     title,
     description,
     openGraph: {

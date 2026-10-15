@@ -3,16 +3,11 @@ import { Hexagon, Circle, Square } from 'lucide-react'
 
 export function TimelineSection({ data }: { data: any }) {
   const eyebrow = data?.eyebrow || 'STRUCTURED CAREER PATH'
-  const timeline = data?.timeline?.length ? data.timeline : [
-     { company: 'Cast Group', role: 'HEAD OF PRODUCT', isCurrent: true, startYear: 'Current' },
-     { company: 'Clínica SiM', role: 'UX LEAD', startYear: '2019', endYear: '2021' },
-     { company: 'Prolins', role: 'SENIOR PRODUCT DESIGNER', startYear: '2018', endYear: '2019' },
-     { company: 'Sintaxe Digital', role: 'LEAD UX', startYear: '2012', endYear: '2018' },
-     { company: 'Index Digital', role: 'SYSTEMS DESIGNER', startYear: '2008', endYear: '2012' },
-  ]
+  const timeline = data?.timeline || []
+  if (!timeline.length) return null
 
   return (
-    <section id="path" className="w-full py-32 bg-background border-t border-border-subtle/50 overflow-hidden">
+    <section id="path" className="w-full py-16 md:py-24 bg-background border-t border-border-subtle/50 overflow-hidden">
       <Container className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-24">
         <div className="md:col-span-3 pb-8 md:pb-0">
            <h2 className="text-[10px] tracking-[0.2em] font-bold text-brand-muted uppercase relative inline-block">
@@ -34,7 +29,7 @@ export function TimelineSection({ data }: { data: any }) {
                     {entry.isCurrent ? (
                        <span className="block text-[9px] uppercase tracking-widest text-[#2E3C65] font-black">{entry.startYear}</span>
                     ) : (
-                       <span className="block text-[9px] uppercase tracking-widest text-brand-muted font-bold">{entry.startYear} — {entry.endYear}</span>
+                       <span className="block text-[10px] text-brand-muted font-semibold leading-relaxed tabular-nums">{entry.startYear}<br />{entry.endYear}</span>
                     )}
                   </div>
 

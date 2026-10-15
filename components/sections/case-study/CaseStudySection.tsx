@@ -19,9 +19,10 @@ interface CaseStudySectionProps {
  */
 export function CaseStudySection({ eyebrow, title, body, first = false }: CaseStudySectionProps) {
   const paragraphs = Array.isArray(body) ? body : [body]
+  if (!paragraphs.some(paragraph => paragraph?.trim())) return null
 
   return (
-    <section className={`w-full py-40 bg-background ${first ? '' : 'border-t border-border-subtle/50'}`}>
+    <section className={`w-full py-16 md:py-24 bg-background ${first ? '' : 'border-t border-border-subtle/50'}`}>
       <Container className="grid grid-cols-1 md:grid-cols-12 gap-16 lg:gap-24">
 
         {/* Left — Section Label — same as PhilosophySection */}
@@ -42,7 +43,7 @@ export function CaseStudySection({ eyebrow, title, body, first = false }: CaseSt
             {paragraphs.map((p, i) => (
               <p
                 key={i}
-                className="text-sm md:text-[15px] leading-[1.8] text-brand-gray max-w-[580px] font-medium"
+                className="text-base leading-[1.8] text-brand-gray max-w-[680px]"
               >
                 {p}
               </p>

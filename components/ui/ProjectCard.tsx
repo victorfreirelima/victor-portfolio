@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react'
 export function ProjectCard({ project, lang }: { project: any; lang?: string }) {
   const bgColor = project?.coverBackgroundColor || '#E5E7EB'
   const slug = project?.slug?.current || (project?.title || '').toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-  const href = project?.ctaLink || (lang ? `/${lang}/projects/${slug}` : `/projects/${slug}`)
+  const href = (project?.ctaLink && project.ctaLink !== '#') ? project.ctaLink : (lang ? `/${lang}/projects/${slug}` : `/projects/${slug}`)
 
   return (
     <Link
@@ -39,11 +39,11 @@ export function ProjectCard({ project, lang }: { project: any; lang?: string }) 
       {/* Bottom Content Area */}
       <div className="flex flex-col flex-1 p-10 lg:p-14 gap-8">
         <div className="flex justify-between items-start gap-4">
-          <h3 className="font-bold text-2xl tracking-tight text-brand-dark">
+          <h3 className="font-bold text-xl md:text-2xl tracking-tight text-brand-dark min-w-0">
             {project?.title || 'Project Name'}
           </h3>
           {project?.tag && (
-            <span className="text-[7.5px] uppercase tracking-[0.25em] font-black text-brand-muted border border-border-subtle/60 px-2 py-1.5 rounded-sm mt-1 whitespace-nowrap">
+            <span className="text-[10px] uppercase tracking-[0.08em] font-semibold text-brand-gray border border-border-subtle px-2 py-1.5 rounded-sm mt-1 shrink-0">
               {project.tag}
             </span>
           )}
