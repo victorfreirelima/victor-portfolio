@@ -6,6 +6,11 @@ import { ArrowRight } from 'lucide-react'
 export function ProjectCard({ project, lang }: { project: any; lang?: string }) {
   const bgColor = project?.coverBackgroundColor || '#E5E7EB'
   const slug = project?.slug?.current || (project?.title || '').toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
+  const isExplanatoryDiagram = slug === 'soficom-cloud'
+  const showCompleteImage = project?.coverImageFit === 'contain' || isExplanatoryDiagram
+  const imageAlt = project?.coverImageAlt || (isExplanatoryDiagram
+    ? (lang === 'pt-br' ? 'Representação explicativa do fluxo — não é captura da interface.' : 'Explanatory flow diagram — not an interface screenshot.')
+    : project?.title || 'Project')
   const href = (project?.ctaLink && project.ctaLink !== '#') ? project.ctaLink : (lang ? `/${lang}/projects/${slug}` : `/projects/${slug}`)
 
   return (
@@ -19,14 +24,14 @@ export function ProjectCard({ project, lang }: { project: any; lang?: string }) 
         style={{ backgroundColor: bgColor }}
       >
         {project?.coverImage || project?.staticImageUrl ? (
-          <div className="relative w-full h-full drop-shadow-xl transition-transform duration-500 group-hover:scale-105">
+          <div className={`relative w-full h-full drop-shadow-xl transition-transform duration-500 ${showCompleteImage ? '' : 'group-hover:scale-105'}`}>
             <Image
               src={(project?.coverImage ? urlForImage(project.coverImage)?.url() as string : null) || project?.staticImageUrl}
-              alt={project?.title || 'Project mock'}
+              alt={imageAlt}
               fill
               quality={100}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover object-top"
+              className={showCompleteImage ? 'object-contain object-center' : 'object-cover object-top'}
             />
           </div>
         ) : (

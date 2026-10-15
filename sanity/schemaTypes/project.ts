@@ -47,6 +47,8 @@ export default defineType({
       type: 'string',
       description: 'Used as a fallback if no coverImage is set. E.g., /cs-slicecom-hero.png',
     }),
+    defineField({ name: 'coverImageAlt', title: 'Cover Image Description', type: 'string' }),
+    defineField({ name: 'coverImageFit', title: 'Cover Image Fit', type: 'string', options: { list: [{ title: 'Crop to fill', value: 'cover' }, { title: 'Show complete image', value: 'contain' }] }, initialValue: 'cover' }),
     defineField({
       name: 'coverBackgroundColor',
       title: 'Cover Background Color (Hex)',
