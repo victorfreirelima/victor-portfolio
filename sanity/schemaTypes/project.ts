@@ -47,6 +47,8 @@ export default defineType({
       type: 'string',
       description: 'Used as a fallback if no coverImage is set. E.g., /cs-slicecom-hero.png',
     }),
+    defineField({ name: 'coverImageAlt', title: 'Cover Image Description', type: 'string' }),
+    defineField({ name: 'coverImageFit', title: 'Cover Image Fit', type: 'string', options: { list: [{ title: 'Crop to fill', value: 'cover' }, { title: 'Show complete image', value: 'contain' }] }, initialValue: 'cover' }),
     defineField({
       name: 'coverBackgroundColor',
       title: 'Cover Background Color (Hex)',
@@ -94,6 +96,8 @@ export default defineType({
         defineField({ name: 'heroImage', title: 'Hero Image', type: 'image', options: { hotspot: true } }),
         defineField({ name: 'staticHeroImageFallback', title: 'Static Hero Image Fallback (URL)', type: 'string' }),
         defineField({ name: 'overview', title: 'Overview', type: 'text' }),
+        defineField({ name: 'contribution', title: 'My Role and Contribution', type: 'text' }),
+        defineField({ name: 'delivery', title: 'Delivery and Contribution', type: 'text', description: 'Describe confirmed deliveries. Only claim measured results when a source and measurement period are available.' }),
         defineField({ name: 'problem', title: 'Problem & Context', type: 'text' }),
         defineField({ name: 'approach', title: 'Approach / Thinking', type: 'text' }),
         defineField({ name: 'solution', title: 'Solution', type: 'text' }),

@@ -35,7 +35,7 @@ export function Header({ data, lang, navItems }: HeaderProps) {
             {navigation.map((item: any, i: number) => (
               <Link
                 key={i}
-                href={item.link}
+                href={item.link.startsWith('#') ? `${homeHref}${item.link}` : item.link}
                 className="hover:text-foreground transition-colors py-1"
               >
                 {item.label}

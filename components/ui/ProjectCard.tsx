@@ -6,7 +6,12 @@ import { ArrowRight } from 'lucide-react'
 export function ProjectCard({ project, lang }: { project: any; lang?: string }) {
   const bgColor = project?.coverBackgroundColor || '#E5E7EB'
   const slug = project?.slug?.current || (project?.title || '').toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
-  const href = project?.ctaLink || (lang ? `/${lang}/projects/${slug}` : `/projects/${slug}`)
+  const isExplanatoryDiagram = slug === 'soficom-cloud'
+  const showCompleteImage = project?.coverImageFit === 'contain' || isExplanatoryDiagram
+  const imageAlt = project?.coverImageAlt || (isExplanatoryDiagram
+    ? (lang === 'pt-br' ? 'Representação explicativa do fluxo — não é captura da interface.' : 'Explanatory flow diagram — not an interface screenshot.')
+    : project?.title || 'Project')
+  const href = (project?.ctaLink && project.ctaLink !== '#') ? project.ctaLink : (lang ? `/${lang}/projects/${slug}` : `/projects/${slug}`)
 
   return (
     <Link
@@ -19,14 +24,14 @@ export function ProjectCard({ project, lang }: { project: any; lang?: string }) 
         style={{ backgroundColor: bgColor }}
       >
         {project?.coverImage || project?.staticImageUrl ? (
-          <div className="relative w-full h-full drop-shadow-xl transition-transform duration-500 group-hover:scale-105">
+          <div className={`relative w-full h-full drop-shadow-xl transition-transform duration-500 ${showCompleteImage ? '' : 'group-hover:scale-105'}`}>
             <Image
               src={(project?.coverImage ? urlForImage(project.coverImage)?.url() as string : null) || project?.staticImageUrl}
-              alt={project?.title || 'Project mock'}
+              alt={imageAlt}
               fill
               quality={100}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className="object-cover object-top"
+              className={showCompleteImage ? 'object-contain object-center' : 'object-cover object-top'}
             />
           </div>
         ) : (
@@ -39,11 +44,11 @@ export function ProjectCard({ project, lang }: { project: any; lang?: string }) 
       {/* Bottom Content Area */}
       <div className="flex flex-col flex-1 p-10 lg:p-14 gap-8">
         <div className="flex justify-between items-start gap-4">
-          <h3 className="font-bold text-2xl tracking-tight text-brand-dark">
+          <h3 className="font-bold text-xl md:text-2xl tracking-tight text-brand-dark min-w-0">
             {project?.title || 'Project Name'}
           </h3>
           {project?.tag && (
-            <span className="text-[7.5px] uppercase tracking-[0.25em] font-black text-brand-muted border border-border-subtle/60 px-2 py-1.5 rounded-sm mt-1 whitespace-nowrap">
+            <span className="text-[10px] uppercase tracking-[0.08em] font-semibold text-brand-gray border border-border-subtle px-2 py-1.5 rounded-sm mt-1 shrink-0">
               {project.tag}
             </span>
           )}

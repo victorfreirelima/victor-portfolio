@@ -1,0 +1,616 @@
+{
+  "pt-br": {
+    "settings": {
+      "heroEyebrow": "UX/UI Designer",
+      "heroHeadline": "Design de interfaces para sistemas corporativos e SaaS.",
+      "heroSupportingText": "Transformo requisitos de negócio em fluxos e interfaces para operações complexas. Trabalho com autonomia para propor melhorias e em colaboração com produto e desenvolvimento.",
+      "heroHighlightWord": "",
+      "heroProjectsLabel": "Ver projetos",
+      "heroResumeLabel": "Baixar currículo em português",
+      "heroContactLabel": "Entrar em contato",
+      "resumeUrl": "",
+      "logoStripTitle": "Experiência na Cast Group e em projetos para clientes",
+      "logoStripDescription": "Projetos para Metrô-SP, Sabesp e Banco da Amazônia realizados por meio da Cast Group.",
+      "navigationItems": [
+        {
+          "_key": "nav-0",
+          "label": "Projetos",
+          "link": "#systems"
+        },
+        {
+          "_key": "nav-1",
+          "label": "Como trabalho",
+          "link": "#strategy"
+        },
+        {
+          "_key": "nav-2",
+          "label": "Trajetória",
+          "link": "#path"
+        },
+        {
+          "_key": "nav-3",
+          "label": "Contato",
+          "link": "#contact"
+        }
+      ],
+      "projectsEyebrow": "Projetos selecionados",
+      "projectsFeaturedLabel": "Em destaque",
+      "projectsOtherLabel": "Outros projetos",
+      "timelineEyebrow": "Experiência profissional",
+      "caseStudySections": {
+        "overview": "Contexto do projeto",
+        "problem": "Desafio de interface",
+        "approach": "Minha contribuição",
+        "solution": "Organização da solução",
+        "keyScreens": "Telas do projeto",
+        "screensUnit": "TELAS",
+        "uxDecisions": "Detalhes da interface",
+        "impact": "Entrega e contribuição",
+        "reflection": "Aprendizado"
+      },
+      "caseStudyMetaLabels": {
+        "role": "Cargo",
+        "context": "Contexto",
+        "year": "Período"
+      },
+      "caseStudyEyebrowLabel": "Estudo de caso",
+      "caseStudyBackLabel": "Voltar aos projetos",
+      "metaTitle": "Victor Freire | UX/UI Designer | Sistemas corporativos e SaaS",
+      "metaDescription": "Portfólio de Victor Freire. UX/UI Design, fluxos e protótipos para sistemas corporativos, SaaS e aplicações web e mobile."
+    },
+    "philosophy": {
+      "eyebrow": "Como trabalho",
+      "title": "Do requisito à solução de interface.",
+      "body": "Meu trabalho parte da compreensão dos requisitos e da discussão do problema com o Product Owner. A partir disso, estruturo fluxos, wireframes e protótipos, com autonomia para propor melhorias na navegação, nas informações e nas interações.\n\nColaboro com os desenvolvedores para alinhar a solução às possibilidades de implementação. Minha experiência em front-end contribui para esse diálogo entre design e tecnologia."
+    },
+    "contact": {
+      "eyebrow": "Vamos conversar",
+      "title": "Disponível para oportunidades em UX/UI e Product Design.",
+      "email": "victorfreire21@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/victor-freire-lima/"
+    },
+    "timeline": [
+      {
+        "company": "Cast Group",
+        "role": "UX/UI Designer",
+        "startYear": "jan/2021",
+        "endYear": "abr/2026",
+        "isCurrent": false,
+        "order": 0
+      },
+      {
+        "company": "Clínica SiM",
+        "role": "UX/UI Designer",
+        "startYear": "jul/2019",
+        "endYear": "jan/2021",
+        "isCurrent": false,
+        "order": 1
+      },
+      {
+        "company": "Prolins",
+        "role": "UX/UI Designer",
+        "startYear": "jul/2018",
+        "endYear": "jul/2019",
+        "isCurrent": false,
+        "order": 2
+      },
+      {
+        "company": "Sintaxe Digital",
+        "role": "UX/UI Designer e Desenvolvedor Front-End",
+        "startYear": "out/2012",
+        "endYear": "jul/2018",
+        "isCurrent": false,
+        "order": 3
+      },
+      {
+        "company": "Index Digital",
+        "role": "UX/UI Designer e Desenvolvedor Front-End",
+        "startYear": "fev/2011",
+        "endYear": "out/2012",
+        "isCurrent": false,
+        "order": 4
+      },
+      {
+        "company": "NOIX Internet",
+        "role": "UX/UI Designer e Desenvolvedor Front-End",
+        "startYear": "abr/2009",
+        "endYear": "fev/2011",
+        "isCurrent": false,
+        "order": 5
+      }
+    ],
+    "projects": {
+      "soficom-cloud": {
+        "title": "Soficom Cloud",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Clareza na atribuição de contabilistas e na conclusão de atividades.",
+        "order": 0,
+        "featured": true,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Clareza na atribuição de contabilistas e na conclusão de atividades.",
+          "role": "UX/UI Designer",
+          "context": "Sistema corporativo",
+          "year": "Durante a atuação na Cast Group",
+          "overview": "No Soficom Cloud, trabalhei no fluxo de atribuição de contabilistas a atividades. A demanda partia de uma especificação funcional e era discutida com o Product Owner.",
+          "problem": "Tratar a operação como cadastro não comunicava corretamente a tarefa. Cadastrar um profissional, atribuí-lo a uma atividade e concluir essa atividade eram ações distintas.",
+          "approach": "Identifiquei essa ambiguidade por iniciativa própria e propus diferenciar as ações. Tinha autonomia para sugerir mudanças nos fluxos e na organização das informações, em colaboração com o PO e os desenvolvedores.",
+          "solution": "A proposta tornava explícitos o profissional atribuído, a possibilidade de alteração e o estado da atividade. A solução foi discutida com o time e implementada no produto.",
+          "finalReflection": "Uma decisão de nomenclatura pode revelar diferenças importantes nas regras de negócio. Neste trabalho, a contribuição foi explicitar essas diferenças na interação.",
+          "impact": [],
+          "uxDecisions": [
+            {
+              "_key": "distinguish",
+              "title": "Distinguir as ações",
+              "body": "Cadastro, atribuição e conclusão representam ações diferentes no fluxo."
+            },
+            {
+              "_key": "responsible",
+              "title": "Explicitar o responsável",
+              "body": "A proposta contempla o profissional atribuído e a possibilidade de alteração."
+            },
+            {
+              "_key": "status",
+              "title": "Comunicar a situação da atividade",
+              "body": "A atribuição do profissional e a conclusão da atividade são tratadas de forma distinta."
+            }
+          ],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "keyScreens": [],
+          "heroImage": null,
+          "staticHeroImageFallback": "/soficom-flow-pt-br.svg",
+          "delivery": "Melhoria proposta por mim e implementada no Soficom Cloud."
+        },
+        "coverImage": null,
+        "staticImageFallback": "/soficom-flow-pt-br.svg",
+        "staticImageUrl": "/soficom-flow-pt-br.svg",
+        "coverBackgroundColor": "#EDF2F6"
+      },
+      "sabesp": {
+        "title": "SIGA — Sabesp",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Organização de solicitações, permissões e aprovações de acesso.",
+        "order": 1,
+        "featured": true,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Organização de solicitações, permissões e aprovações de acesso.",
+          "role": "UX/UI Designer",
+          "context": "Gestão de acessos",
+          "year": "2023–2024",
+          "overview": "Sistema de gestão de acessos da Sabesp. O projeto reúne funcionalidades de solicitação, consulta e administração de permissões em sistemas corporativos.",
+          "problem": "Organizar diferentes tarefas e informações de acesso, permitindo distinguir módulos, permissões e situações de uma solicitação.",
+          "approach": "Atuação em UX/UI no contexto de um projeto realizado pela Cast Group para a Sabesp, com elaboração de interfaces e fluxos a partir dos requisitos do projeto.",
+          "solution": "As telas apresentadas incluem gestão de módulos, permissões, termos e solicitações de acesso. A organização da interface separa essas tarefas e apresenta as informações correspondentes.",
+          "finalReflection": "Em gestão de acessos, o design precisa comunicar a ação e seu contexto. Os mecanismos de autorização e segurança pertencem à implementação do sistema.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Interfaces de gestão de acessos apresentadas neste case."
+        }
+      },
+      "slicecom": {
+        "title": "Slicecom",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Interfaces para regras de negócio e gestão de comissões.",
+        "order": 2,
+        "featured": false,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Interfaces para regras de negócio e gestão de comissões.",
+          "role": "UX/UI Designer",
+          "context": "SaaS corporativo",
+          "year": "2022–2024",
+          "overview": "Plataforma de gestão de comissões com interfaces para acompanhamento, comissionados, regras e configurações.",
+          "problem": "Representar regras comerciais e dados de comissionamento em telas compreensíveis para a operação.",
+          "approach": "Atuação em UX/UI na construção de interfaces e protótipos para o produto, traduzindo requisitos de negócio em fluxos e organização da informação.",
+          "solution": "O conjunto apresentado reúne uma visão de acompanhamento, a gestão de comissionados e áreas de regras e configurações. A contribuição descrita é de design de interface; o motor de cálculo faz parte da implementação técnica.",
+          "finalReflection": "Compreender a lógica do negócio é necessário para apresentar as informações e ações de forma coerente.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Fluxos e interfaces de gestão de comissões."
+        }
+      },
+      "metro": {
+        "title": "SMI — Metrô-SP",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Organização de cadastros, consultas e atendimento interno.",
+        "order": 3,
+        "featured": false,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Organização de cadastros, consultas e atendimento interno.",
+          "role": "UX/UI Designer",
+          "context": "Sistema interno",
+          "year": "2023–2024",
+          "overview": "Portal interno do Metrô-SP com funcionalidades de cadastro de profissionais, consulta de usuários, atendimento e histórico de alterações.",
+          "problem": "Dar uma organização consistente às tarefas de cadastro, consulta e atendimento, mantendo informações detalhadas acessíveis.",
+          "approach": "Atuação em UX/UI em um projeto realizado pela Cast Group para o Metrô-SP, na estruturação das interfaces apresentadas.",
+          "solution": "Listagens, formulários e consultas representam tarefas diferentes dentro de uma mesma experiência. O histórico apresenta alterações para consulta; seu layout não garante a imutabilidade dos registros.",
+          "finalReflection": "Em ferramentas internas, a consistência entre tarefas é uma parte importante da clareza da experiência.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Interfaces administrativas e de atendimento."
+        }
+      },
+      "sigaf": {
+        "title": "SIGAF",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Hierarquia da informação em operações administrativas e financeiras.",
+        "order": 4,
+        "featured": false,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Hierarquia da informação em operações administrativas e financeiras.",
+          "role": "UX/UI Designer",
+          "context": "Sistema administrativo e financeiro",
+          "year": "2024",
+          "overview": "Sistema administrativo e financeiro com telas de acompanhamento de contratos, informações financeiras, processamento e documentos.",
+          "problem": "Organizar muitos registros, valores e situações de processamento sem perder a hierarquia da informação.",
+          "approach": "Atuação no design das interfaces, com organização de dashboards, tabelas e informações operacionais.",
+          "solution": "As telas apresentam informações de acompanhamento e consulta em estruturas tabulares e painéis. O foco deste case está na organização visual das informações e das ações disponíveis.",
+          "finalReflection": "Projetos com alta densidade de dados exigem atenção às informações necessárias para executar cada tarefa.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Dashboards e interfaces administrativas e financeiras."
+        }
+      },
+      "myphone": {
+        "title": "MyPhone",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Organização de serviços e informações financeiras no mobile.",
+        "order": 5,
+        "featured": false,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Organização de serviços e informações financeiras no mobile.",
+          "role": "UX/UI Designer",
+          "context": "Aplicação financeira mobile",
+          "year": "2023",
+          "overview": "Experiência mobile com consultas financeiras, limites de cartões, informes e funcionalidades de Open Finance.",
+          "problem": "Distribuir diferentes serviços financeiros em telas menores e tornar as informações de cada operação compreensíveis.",
+          "approach": "Atuação no design das interfaces mobile apresentadas, com foco na hierarquia e na organização das informações.",
+          "solution": "O conjunto reúne telas de visão geral, limites, informes e Open Finance. As informações são agrupadas por função para estruturar o acesso aos serviços.",
+          "finalReflection": "A organização visual contribui para orientar a leitura. Confiança também depende de comunicação clara e do funcionamento do serviço.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Interfaces de consulta e serviços financeiros."
+        }
+      },
+      "castforme": {
+        "title": "CastForMe",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Consistência entre contratos, perfis de acesso e configurações.",
+        "order": 6,
+        "featured": false,
+        "ctaLabel": "Ver estudo de caso",
+        "caseStudy": {
+          "subtitle": "Consistência entre contratos, perfis de acesso e configurações.",
+          "role": "UX/UI Designer",
+          "context": "Portal corporativo",
+          "year": "2024",
+          "overview": "Portal interno da Cast Group com funcionalidades de contratos, perfis de acesso, configurações e acompanhamento.",
+          "problem": "Manter uma organização previsível entre módulos administrativos com informações diferentes.",
+          "approach": "Atuação em UX/UI nas interfaces apresentadas, com organização de navegação, listagens e edição de informações.",
+          "solution": "O conjunto de telas usa padrões compartilhados de navegação e apresentação. O case destaca a consistência entre funcionalidades, sem atribuir ao design garantias técnicas de segurança ou conformidade.",
+          "finalReflection": "Padrões consistentes ajudam a comunicar onde estão as informações e quais ações pertencem a cada módulo.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Fluxos, wireframes e protótipos de interface.",
+          "delivery": "Interfaces de gestão interna e organização de módulos."
+        }
+      }
+    }
+  },
+  "en": {
+    "settings": {
+      "heroEyebrow": "UX/UI Designer",
+      "heroHeadline": "Interface design for enterprise systems and SaaS.",
+      "heroSupportingText": "I turn business requirements into flows and interfaces for complex operations, working with product and engineering to propose improvements.",
+      "heroHighlightWord": "",
+      "heroProjectsLabel": "View projects",
+      "heroResumeLabel": "Download résumé in Portuguese",
+      "heroContactLabel": "Get in touch",
+      "resumeUrl": "",
+      "logoStripTitle": "Experience at Cast Group and on client projects",
+      "logoStripDescription": "Projects for Metrô-SP, Sabesp and Banco da Amazônia delivered through Cast Group.",
+      "navigationItems": [
+        {
+          "_key": "nav-0",
+          "label": "Projects",
+          "link": "#systems"
+        },
+        {
+          "_key": "nav-1",
+          "label": "How I work",
+          "link": "#strategy"
+        },
+        {
+          "_key": "nav-2",
+          "label": "Experience",
+          "link": "#path"
+        },
+        {
+          "_key": "nav-3",
+          "label": "Contact",
+          "link": "#contact"
+        }
+      ],
+      "projectsEyebrow": "Selected projects",
+      "projectsFeaturedLabel": "Featured work",
+      "projectsOtherLabel": "More projects",
+      "timelineEyebrow": "Professional experience",
+      "caseStudySections": {
+        "overview": "Project context",
+        "problem": "Interface challenge",
+        "approach": "My contribution",
+        "solution": "Solution structure",
+        "keyScreens": "Project screens",
+        "screensUnit": "SCREENS",
+        "uxDecisions": "Interface details",
+        "impact": "Delivery and contribution",
+        "reflection": "Learning"
+      },
+      "caseStudyMetaLabels": {
+        "role": "Role",
+        "context": "Context",
+        "year": "Period"
+      },
+      "caseStudyEyebrowLabel": "Case study",
+      "caseStudyBackLabel": "Back to projects",
+      "metaTitle": "Victor Freire | UX/UI Designer | Enterprise systems and SaaS",
+      "metaDescription": "Victor Freire’s portfolio. UX/UI design, flows and prototypes for enterprise systems, SaaS, web and mobile applications."
+    },
+    "philosophy": {
+      "eyebrow": "How I work",
+      "title": "From requirements to interface design.",
+      "body": "My work starts with understanding requirements and discussing the problem with the Product Owner. I structure flows, wireframes and prototypes, with autonomy to suggest improvements to navigation, information and interactions.\n\nI collaborate with developers to align the design with implementation constraints. My front-end background supports this dialogue between design and engineering."
+    },
+    "contact": {
+      "eyebrow": "Let’s talk",
+      "title": "Available for UX/UI and Product Design opportunities.",
+      "email": "victorfreire21@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/victor-freire-lima/"
+    },
+    "timeline": [
+      {
+        "company": "Cast Group",
+        "role": "UX/UI Designer",
+        "startYear": "Jan/2021",
+        "endYear": "Apr/2026",
+        "isCurrent": false,
+        "order": 0
+      },
+      {
+        "company": "Clínica SiM",
+        "role": "UX/UI Designer",
+        "startYear": "Jul/2019",
+        "endYear": "Jan/2021",
+        "isCurrent": false,
+        "order": 1
+      },
+      {
+        "company": "Prolins",
+        "role": "UX/UI Designer",
+        "startYear": "Jul/2018",
+        "endYear": "Jul/2019",
+        "isCurrent": false,
+        "order": 2
+      },
+      {
+        "company": "Sintaxe Digital",
+        "role": "UX/UI Designer and Front-End Developer",
+        "startYear": "Oct/2012",
+        "endYear": "Jul/2018",
+        "isCurrent": false,
+        "order": 3
+      },
+      {
+        "company": "Index Digital",
+        "role": "UX/UI Designer and Front-End Developer",
+        "startYear": "Feb/2011",
+        "endYear": "Oct/2012",
+        "isCurrent": false,
+        "order": 4
+      },
+      {
+        "company": "NOIX Internet",
+        "role": "UX/UI Designer and Front-End Developer",
+        "startYear": "Apr/2009",
+        "endYear": "Feb/2011",
+        "isCurrent": false,
+        "order": 5
+      }
+    ],
+    "projects": {
+      "soficom-cloud": {
+        "title": "Soficom Cloud",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Clearer accountant assignment and activity completion.",
+        "order": 0,
+        "featured": true,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Clearer accountant assignment and activity completion.",
+          "role": "UX/UI Designer",
+          "context": "Enterprise software",
+          "year": "During my time at Cast Group",
+          "overview": "At Soficom Cloud, I worked on the flow for assigning accountants to activities. Requests started with a functional specification and a discussion with the Product Owner.",
+          "problem": "Presenting the operation as registration did not clearly communicate the task. Registering a professional, assigning them to an activity and completing that activity were distinct actions.",
+          "approach": "I identified this ambiguity and proposed separating the actions. I had autonomy to suggest changes to flows and information structure, collaborating with the PO and developers.",
+          "solution": "The proposal made the assigned professional, the option to change them and the activity status explicit. The solution was discussed with the team and implemented in the product.",
+          "finalReflection": "A naming decision can reveal important differences in business rules. My contribution here was to make those differences explicit in the interaction.",
+          "impact": [],
+          "uxDecisions": [
+            {
+              "_key": "distinguish",
+              "title": "Distinguish the actions",
+              "body": "Registration, assignment and completion represent different actions in the flow."
+            },
+            {
+              "_key": "responsible",
+              "title": "Make responsibility explicit",
+              "body": "The proposal includes the assigned professional and the option to change them."
+            },
+            {
+              "_key": "status",
+              "title": "Communicate activity status",
+              "body": "Professional assignment and activity completion are treated as distinct actions."
+            }
+          ],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "keyScreens": [],
+          "heroImage": null,
+          "staticHeroImageFallback": "/soficom-flow-en.svg",
+          "delivery": "An improvement I proposed and that was implemented in Soficom Cloud."
+        },
+        "coverImage": null,
+        "staticImageFallback": "/soficom-flow-en.svg",
+        "staticImageUrl": "/soficom-flow-en.svg",
+        "coverBackgroundColor": "#EDF2F6"
+      },
+      "sabesp": {
+        "title": "SIGA — Sabesp",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Structuring access requests, permissions and approvals.",
+        "order": 1,
+        "featured": true,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Structuring access requests, permissions and approvals.",
+          "role": "UX/UI Designer",
+          "context": "Access management",
+          "year": "2023–2024",
+          "overview": "Sabesp’s access management system brings together requests, queries and permission administration for enterprise systems.",
+          "problem": "Organize access-related tasks and information so that modules, permissions and request states can be distinguished.",
+          "approach": "UX/UI work on a Cast Group project for Sabesp, creating interfaces and flows based on project requirements.",
+          "solution": "The screens include module management, permissions, terms and access requests. The interface separates these tasks and presents the corresponding information.",
+          "finalReflection": "Access-management design needs to communicate actions and context. Authorization and security mechanisms are part of the system implementation.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Access-management interfaces presented in this case."
+        }
+      },
+      "slicecom": {
+        "title": "Slicecom",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Interfaces for business rules and commission management.",
+        "order": 2,
+        "featured": false,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Interfaces for business rules and commission management.",
+          "role": "UX/UI Designer",
+          "context": "Enterprise SaaS",
+          "year": "2022–2024",
+          "overview": "A commission management platform with interfaces for monitoring, agents, rules and settings.",
+          "problem": "Represent commercial rules and commission information in screens that support operational work.",
+          "approach": "UX/UI work on the product’s interfaces and prototypes, translating business requirements into flows and information structure.",
+          "solution": "The work includes an overview, agent management, rules and settings. This case describes interface design; the calculation engine belongs to technical implementation.",
+          "finalReflection": "Understanding business logic is necessary to present information and actions coherently.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Commission-management flows and interfaces."
+        }
+      },
+      "metro": {
+        "title": "SMI — Metrô-SP",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Structuring registration, queries and internal support.",
+        "order": 3,
+        "featured": false,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Structuring registration, queries and internal support.",
+          "role": "UX/UI Designer",
+          "context": "Internal system",
+          "year": "2023–2024",
+          "overview": "An internal Metrô-SP portal with professional registration, user queries, support and change-history functionality.",
+          "problem": "Give registration, query and support tasks a consistent structure while keeping detailed information accessible.",
+          "approach": "UX/UI work on a Cast Group project for Metrô-SP, structuring the interfaces presented here.",
+          "solution": "Lists, forms and queries represent distinct tasks within one experience. The history presents changes for consultation; its layout does not guarantee immutable records.",
+          "finalReflection": "In internal tools, consistency between tasks is an important part of a clear experience.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Administrative and internal-support interfaces."
+        }
+      },
+      "sigaf": {
+        "title": "SIGAF",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Information hierarchy for administrative and financial work.",
+        "order": 4,
+        "featured": false,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Information hierarchy for administrative and financial work.",
+          "role": "UX/UI Designer",
+          "context": "Administrative and financial system",
+          "year": "2024",
+          "overview": "An administrative and financial system with contract tracking, financial information, processing and document screens.",
+          "problem": "Organize records, values and processing states while maintaining a clear information hierarchy.",
+          "approach": "Interface design work covering dashboards, tables and operational information.",
+          "solution": "The screens present monitoring and query information through tables and dashboards. This case focuses on the visual organization of information and available actions.",
+          "finalReflection": "Data-dense projects require attention to the information needed for each task.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Administrative and financial dashboards and interfaces."
+        }
+      },
+      "myphone": {
+        "title": "MyPhone",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Organizing financial services and information on mobile.",
+        "order": 5,
+        "featured": false,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Organizing financial services and information on mobile.",
+          "role": "UX/UI Designer",
+          "context": "Mobile financial application",
+          "year": "2023",
+          "overview": "A mobile experience with financial queries, card limits, statements and Open Finance functionality.",
+          "problem": "Distribute financial services across smaller screens and make each operation’s information understandable.",
+          "approach": "Design work on the mobile interfaces presented here, focusing on information hierarchy and organization.",
+          "solution": "The work includes overview, limits, statements and Open Finance screens. Information is grouped by function to structure access to services.",
+          "finalReflection": "Visual organization helps guide reading. Trust also depends on clear communication and how the service works.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Financial-query and service interfaces."
+        }
+      },
+      "castforme": {
+        "title": "CastForMe",
+        "tag": "UX/UI Designer",
+        "shortDescription": "Consistency across contracts, access profiles and settings.",
+        "order": 6,
+        "featured": false,
+        "ctaLabel": "View case study",
+        "caseStudy": {
+          "subtitle": "Consistency across contracts, access profiles and settings.",
+          "role": "UX/UI Designer",
+          "context": "Enterprise portal",
+          "year": "2024",
+          "overview": "Cast Group’s internal portal with contracts, access profiles, settings and monitoring functionality.",
+          "problem": "Maintain a predictable structure across administrative modules with different information.",
+          "approach": "UX/UI work on the interfaces presented here, organizing navigation, lists and information editing.",
+          "solution": "The screens share navigation and presentation patterns. This case highlights interface consistency without attributing technical security or compliance guarantees to design.",
+          "finalReflection": "Consistent patterns help communicate where information belongs and which actions are available in each module.",
+          "impact": [],
+          "uxDecisions": [],
+          "contribution": "Flows, wireframes and interface prototypes.",
+          "delivery": "Internal-management interfaces and module organization."
+        }
+      }
+    }
+  }
+}

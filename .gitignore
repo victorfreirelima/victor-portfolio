@@ -51,3 +51,5 @@ next-env.d.ts
 !sanity.cli.ts
 *.log
 export.tar.gz
+!content/portfolio-review.json
+/.portfolio-review/

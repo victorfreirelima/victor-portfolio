@@ -52,6 +52,13 @@ export default defineType({
       type: 'image',
       options: { hotspot: true },
     }),
+    defineField({ name: 'heroProjectsLabel', title: 'Projects Button Label', type: 'string' }),
+    defineField({ name: 'heroResumeLabel', title: 'Resume Button Label', type: 'string' }),
+    defineField({ name: 'heroContactLabel', title: 'Contact Button Label', type: 'string' }),
+    defineField({ name: 'resumeUrl', title: 'Resume URL or Local Path', type: 'string' }),
+    defineField({ name: 'logoStripDescription', title: 'Employer and Client Relationship', type: 'text' }),
+    defineField({ name: 'projectsFeaturedLabel', title: 'Featured Projects Label', type: 'string' }),
+    defineField({ name: 'projectsOtherLabel', title: 'Other Projects Label', type: 'string' }),
     defineField({
       name: 'navigationItems',
       title: 'Navigation Items',
